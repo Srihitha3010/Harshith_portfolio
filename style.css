@@ -318,6 +318,7 @@ section {
 
 #experience {
   position: relative;
+  margin-top: 4rem; 
 }
 
 .experience-sub-title {
@@ -332,6 +333,7 @@ section {
   justify-content: center;
   flex-direction: column;
 }
+
 
 .article-container {
   display: flex;

@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Harshith Kumar Pappula</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Harshith Kumar Pappula </div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="Harshith's profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Harshith Kumar Pappula</h1>
+        <p class="section__text__p2">Network Engineer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Resume.pdf')"
+          >
+            Download CV
+          <button class="btn btn-color-1" onclick="location.href='tel:+19404355404'">
+            Contact Info
+          </button>
+        </div>     
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/harshith-kumar-031060224/'"
+          />
+          <!-- <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/'"
+          /> -->
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+             <p>6+ years <br />Network Engineer</p>
+              <p style="margin-top: 8px; font-size: 0.9em;">
+              Worked at:<br />
+               AmbiPalm Health Pvt Ltd (2021–2022)<br />
+              Sugati Tech Solutions (2018–2021)<br />
+               University of North Texas (2023–2024)
+                </p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+               <p style="margin-top: 30px;">M.Sc. Computer Science<br />University of North Texas (2023–2024)<br />CGPA: 3.4 / 4.0</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p style="text-align: justify;">
+              With over 5 years of experience as a Network Engineer,
+              I specialize in designing, securing, and maintaining enterprise-scale
+               IT infrastructures. Proven expertise in configuring and managing Cisco 
+               routers/switches, Checkpoint, and Palo Alto firewalls, along with deep 
+               knowledge of TCP/IP, IPSec, GRE tunnels, and VPN technologies 
+               (IPSec, SSL, OpenVPN). Skilled in firewall and network administration,
+                including platform and data migration, and network connectivity projects.
+                 Experienced in PowerShell scripting for automating Active Directory tasks,
+                  system configurations, and log analysis. Adept at VoIP technologies,
+                   including SIP trunking and TATA Smart Flow, and proficient in network 
+                   monitoring tools like Wireshark. Strong problem-solving and communication 
+                   skills, with a consistent track record of resolving issues, 
+                   managing IT assets, and ensuring SLA compliance in fast-paced environments.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+       <p class="section__text__p1">Explore My</p>
+       <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+       <div class="about-containers">
+       <div class="details-container">
+        <h2 class="experience-sub-title">Networking & Security</h2>
+        <div class="article-container">
+          <article>
+            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+            <div>
+              <h3>Cisco Routers/Switches</h3>
+              <p>Experienced</p>
+            </div>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+            <div>
+              <h3>Firewall Administration</h3>
+              <p>Experienced</p>
+            </div>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+            <div>
+              <h3>VPN (IPSec, GRE)</h3>
+              <p>Experienced</p>
+            </div>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+            <div>
+              <h3>VLANs, TCP/IP, ACLs</h3>
+              <p>Experienced</p>
+            </div>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+            <div>
+              <h3>Wireshark</h3>
+              <p>Intermediate</p>
+            </div>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+            <div>
+              <h3>WLAN / LAN / WAN</h3>
+              <p>Intermediate</p>
+            </div>
+          </article>
+          
+        </div>
+        </div>
+
+        <div class="details-container">
+        <h2 class="experience-sub-title">System & Cloud Administration</h2>
+        <div class="article-container">
+          <article>
+            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+            <div>
+              <h3>Windows Server 2019</h3>
+              <p>Experienced</p>
+            </div>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+            <div>
+              <h3>Linux Server</h3>
+              <p>Intermediate</p>
+            </div>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+            <div>
+              <h3>VMware & Cloud Networking</h3>
+              <p>Intermediate</p>
+            </div>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+            <div>
+              <h3>PowerShell & Bash Scripting</h3>
+              <p>Intermediate</p>
+            </div>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+            <div>
+              <h3>VoIP & Call Center Tech</h3>
+              <p>Intermediate</p>
+            </div>
+          </article>
+           <article>
+            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+            <div>
+              <h3>AWS</h3>
+              <p>Intermediate</p>
+             </div>
+           </article>
+          <article>
+            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+            <div>
+              <h3>ServiceNow</h3>
+              <p>Basic</p>
+             </div>
+           </article>
+          </div>
+         </div>
+
+          <div class="details-container">
+        <h2 class="experience-sub-title">Programming Languages</h2>
+        <div class="article-container">
+          <article>
+            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+            <div>
+              <h3>Python</h3>
+              <p>Intermediate</p>
+            </div>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+            <div>
+              <h3>SQL</h3>
+              <p>Intermediate</p>
+            </div>
+          </article>
+           <article>
+            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+            <div>
+              <h3>HTML</h3>
+              <p>Intermediate</p>
+            </div>
+          </article>
+           <article>
+            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+            <div>
+              <h3>CSS</h3>
+              <p>Intermediate</p>
+            </div>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+            <div>
+           <h3>JavaScript</h3>
+              <p>Basic</p>
+            </div>
+          </article>
+        </div>
+      </div>
+
+         </div>
+        </div>
+      </section>
+
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+      <div class="about-containers">
+      <div class="details-container color-container">
+
+        <h2 class="experience-sub-title project-title">200-Seater Examination Center Setup</h2>
+
+         <p style="text-align: justify; padding: 10px 0;">
+          Led the end-to-end setup of a 200-seat examination center, ensuring seamless IT infrastructure deployment. Designed and implemented the network architecture, including structured cabling, VLAN configurations, SD-WAN deployment, and internet redundancy for uninterrupted connectivity. Installed and configured 200 desktops, laptops, network printers, and biometric authentication systems for secure candidate verification. Deployed Windows Server 2019 with Active Directory, DNS, DHCP, and Group Policies to manage user authentication and system security. Configured Cisco switches (Catalyst series) and access points to ensure a secure and high-performance network. Set up exam software, monitoring tools, and CCTV surveillance for real-time proctoring and compliance. Conducted rigorous testing, troubleshooting, and user training. Collaborated with vendors, procurement teams, and stakeholders to complete the project on time and within budget.
+         </p>
+
+       <div class="btn-container">
+        <!-- You can add buttons for "View Details", "Live Demo", or "Download PDF" if needed -->
+        </div>
+
+       </div>
+      </div>
+      </div>
+
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:pappulaharshithkumar@gmail.com ">Email </a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/harshith-kumar-031060224/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2025 Harshith Kumar Pappula. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
